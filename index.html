@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css"></link>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
   <body>
     <header class="main-header">
@@ -11,11 +14,11 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина 'Глейси'">
         </a>
         <ul class="site-navigation">
-          <li>
+          <li class="site-navigation-item">
             <a href="catalog.html">Каталог</a>
             <ul class="site-navigation-subnavigation">
               <li class="subnavigation-item">
-                <a href="#">Новинки</a>
+                <p>Новинки</p>
               </li>
               <li class="subnavigation-item">
                 <a href="catalog.html">Сливочное</a>
@@ -31,10 +34,10 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="site-navigation-item">
             <a href="delivery.html">Доставка и оплата</a>
           </li>
-          <li>
+          <li class="site-navigation-item">
             <a href="about.html">О компании</a>
           </li>
         </ul>
@@ -63,17 +66,34 @@
         <h1 class="visible-hidden">Интернет-магазин мороженого "Глейси"</h1>
         <section class="slider">
           <h2 class="visible-hidden">Наше мороженое</h2>
+          <p class="slider-header first">
+            <b>Крем-брюле и пломбир с малиновым джемом</b>
+          </p>
+          <p class="slider-header second visible-hidden">
+            <b>Шоколадный пломбир и лимонный сорбет </b>
+          </p>
+          <p class="slider-header third visible-hidden">
+            <b>Пломбир с помадкой и клубничный щербет</b>
+          </p>
+          <a href="#" class="button give-both">Давайте оба!</a>
+          <ul class="slider-switchers">
+            <li class="switcher">
+              <button class="switcher-button">
+                Первый слайд
+              </button>
+            </li>
+            <li class="switcher">
+              <button class="switcher-button">
+                Второй слайд
+              </button>
+            </li>
+            <li class="switcher">
+              <button class="switcher-button">
+                Третий слайд
+              </button>
+            </li>
+          </ul>
         </section>
-        <p class="slider-header first">
-          <b>Крем-брюле и пломбир с малиновым джемом</b>
-        </p>
-        <p class="slider-header second">
-          <b>Шоколадный пломбир и лимонный сорбет </b>
-        </p>
-        <p class="slider-header third">
-          <b>Пломбир с помадкой и клубничный щербет</b>
-        </p>
-        <a href="#" class="button give-both">Давайте оба!</a>
       </section>
       <section class="spetial-offer">
         <h2 class="visible-hidden">Специальное предложение</h2>
@@ -90,26 +110,30 @@
       </section>
       <section class="hits">
         <h2 class="visible-hidden">Лучшие предложения</h2>
-        <ul class="best-offers">
-          <li>
+        <ul class="catalog best-offers">
+          <li class="ice-cream-card">
             <img src="img/orange.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p class="price">310 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
-          <li>
+          <li class="ice-cream-card">
             <img src="img/coffee.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <p class="price">380 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
-          <li>
+          <li class="ice-cream-card">
             <img src="img/strawberry.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <p class="price">355 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
-          <li>
+          <li class="ice-cream-card">
             <img src="img/cream-brulee.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <p class="price">415 &#8381; <span class="weight">/кг</span></p>
             <p class="description"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+            <button type="button" class="button" name="fast-view"> Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -146,7 +170,7 @@
           <form name="subscribe" method="post" action="https://echo.htmlacademy.ru">
             <label for="subscribe-email" class="visible-hidden">Электронная почта</label>
             <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Электронная почта" required>
-            <button type="submit" name="subscribe-submit">Отправить</button>
+            <button type="submit" class="button" name="subscribe-submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -182,7 +206,7 @@
         </li>
       </ul>
       <ul class="footer-documents-left">
-        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#" class="bold-href">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
       </ul>
       <ul class="footer-documents-right">
@@ -193,7 +217,7 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="logo-href">
           <img src="img/logo-footer.svg" width="108" height="39" alt="Логотип магазина 'Глейси'">
         </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
+        <p>Сделано в <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</p>
       </div>
     </footer>
     <section class="modal modal-login">
@@ -207,7 +231,7 @@
           <label for="login-password" class="visible-hidden">Пароль</label>
           <input type="password" name="login-password" id="login-password" placeholder="Пароль" required>
         </p>
-        <button type="submit">Войти</button>
+        <button class="button" type="submit">Войти</button>
       </form>
       <a href="#" class="login-form-forgot">Забыли пароль?</a>
       <a href="#" class="login-form-sin-up">Новая регистрация</a>
@@ -226,10 +250,11 @@
           <input type="text" name="callback-name" id="callback-name" placeholder="Как вас зовут?">
         </p>
         <p class="callback-item">
-          <label for="callback-email"> Ваша почта для ответа?</label>
+          <label for="callback-email" class="visible-hidden"> Ваша почта для ответа?</label>
           <input type="email" name="callback-email" id="callback-email" placeholder="Ваша почта для ответа?">
         </p>
-        <textarea name="callnack-message" rows="8" cols="80">Напишите что-нибудь...</textarea>
+        <textarea name="callnack-message" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+        <button class="button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </section>

@@ -1,0 +1,563 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #849c8f;
+}
+
+a{
+  text-decoration: none;
+}
+
+.visible-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-navigation{
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.site-navigation,
+.site-navigation-subnavigation,
+.user-navigation{
+  list-style: none;
+}
+
+.site-navigation-item a:focus,
+.site-navigation-subnavigation a:focus,
+.user-navigation a:focus{
+  outline: none;
+}
+
+/* стили главного меню */
+
+.site-navigation-item>a{
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.site-navigation-item.active>a{
+  background-color: #d07058;
+  border: none;
+  border-radius: 15px;
+}
+
+.site-navigation-item>a:hover,
+.site-navigation-item>a:focus{
+  color: #333333;
+
+  background-color: #f7f6f3;
+  border: none;
+  border-radius: 15px;
+}
+
+.site-navigation-item>a:active{
+  box-shadow: inset 0px 2px 1px 0px #6e6f6f;
+}
+
+/* стили подменю главного меню */
+
+.site-navigation-subnavigation{
+  background-color: #f8f7f4;
+}
+
+.site-navigation-subnavigation p{
+  font-weight: bold;
+  color: #323232;
+  border-bottom: 1px solid #d1d0ce;
+}
+
+.site-navigation-subnavigation a{
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: #323232;
+
+  border: none;
+}
+
+.site-navigation-subnavigation .active a{
+  background-color: rgb(208, 112, 88);
+}
+
+.site-navigation-subnavigation a:hover,
+.site-navigation-subnavigation a:focus{
+  background-color: rgba(208, 112, 88, 0.2);
+
+}
+
+.site-navigation-subnavigation a:active{
+  background-color: rgba(208, 112, 88, 0.5);
+
+}
+
+/* стили пользовательского меню */
+
+.user-navigation a{
+  color: #ffffff;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus{
+  color: #323232;
+  background-color: rgba(255, 255, 255, 1);
+
+}
+
+/* конец меню */
+
+.main-user-information{
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.main-user-information a{
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.main-user-information a:hover,
+.main-user-information a:focus,
+.main-user-information a:active{
+  color: #ffbc9e;
+}
+
+.slider-header{
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+
+  background-color: #e74a35;
+  background-image: linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  background-image: -moz-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  background-image: -webkit-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  background-image: -ms-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 15px;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.button:hover,
+.button:focus{
+  background-color: #ed705e;
+  background-image: linear-gradient( 90deg, #ed705e 0%, #f58669 100%);
+  background-image: -moz-linear-gradient( 90deg, #ed705e 0%, #f58669 100%);
+  background-image: -webkit-linear-gradient( 90deg, #ed705e 0%, #f58669 100%);
+  background-image: -ms-linear-gradient( 90deg, #ed705e 0%, #f58669 100%);
+  box-shadow: 0px 2px 0px 0px rgba(172, 16, 0, 1);
+}
+
+.button:active{
+  background-color: #e74a35;
+  background-image: -moz-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  background-image: -webkit-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  background-image: -ms-linear-gradient( 90deg, #e74a35 0%, #f26843 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
+}
+
+
+
+
+.button.give-both{
+  font-size: 32px;
+  line-height: 44px;
+}
+
+
+.slider-switchers{
+  list-style: none;
+}
+
+
+.spetial-offer-raspberries{
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+
+  background-color: #b20026;
+  background-image: url("../img/raspberries.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spetial-offer-raspberries .offer-lead{
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.spetial-offer-chocolate{
+  font-size: 18px;
+  line-height: 22px;
+
+  background-color: #4d2811;
+  background-image: url("../img/chocolate.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spetial-offer-chocolate .offer-lead{
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.catalog{
+  list-style: none;
+}
+
+.catalog .price{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog .weight{
+  font-size: 30px;
+  line-height: 45px;
+  text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog .description a{
+  color: #ffffff;
+
+  border-bottom: 1px solid #adbdb4;
+}
+
+.catalog .description a:hover,
+.catalog .description a:focus,
+.catalog .description a:active{
+  color: #ffbc9e;
+
+  border-bottom-color: #ffbc9e;
+}
+
+.catalog .description a:focus{
+  outline: none;
+}
+
+.advantages{
+  color: #323232;
+
+  background-color: #f1e8d5;
+  background-image: url("../img/vuffles.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.advantages-lead{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantages-list{
+  list-style: none;
+}
+
+.useful-information article{
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("../img/news-bg.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.useful-information a{
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  font-weight: bold;
+  text-decoration: underline;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.useful-information a:focus{
+  outline: none;
+}
+
+.useful-information a:hover,
+.useful-information a:focus,
+.useful-information a:active{
+  color: #e84d37;
+  border-bottom-color: #f9cdc4;
+}
+
+.subscribe-form{
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border: 5px solid #fe9e90;
+  border-image: url("../img/letter-bg.svg") 5 round round;
+}
+
+.subscribe-form input[type="email"]{
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.subscribe-form input[type="email"]:focus{
+  border: 2px solid #c7c6c5;
+}
+
+.map{
+  color: #323232;
+
+  background-color: #c7c6c5;
+  background-image: url("../img/map.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map-legend{
+  font-size: 14px;
+  line-height: 20px;
+
+  background-color: #ffffff;
+}
+
+.map-legend strong{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-footer{
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-social,
+.footer-documents-left,
+.footer-documents-right{
+  list-style: none;
+}
+
+.footer-social a,
+.footer-documents-left a,
+.footer-documents-right a,
+a.copyright{
+  color: #ffffff;
+  border-bottom: 1px solid #adbdb4;
+}
+
+
+.footer-social a:focus,
+.footer-documents-left a:focus,
+.footer-documents-right a:focus,
+a.copyright:focus{
+  outline: none;
+}
+
+.footer-social a:hover,
+.footer-documents-left a:hover,
+.footer-documents-right a:hover,
+a.copyright:hover,
+.footer-social a:focus,
+.footer-documents-left a:focus,
+.footer-documents-right  a:focus,
+a.copyright:focus,
+.footer-social a:active,
+.footer-documents-left a:active,
+.footer-documents-right  a:active,
+a.copyright.active{
+  color: #ffbc9e;
+
+  border-bottom-color: #ffbc9e;
+}
+
+.footer-documents-left a.bold-href{
+  font-weight: bold;
+}
+
+.modal-login input,
+.modal-search input,
+.modal-callback input,
+.modal-callback textarea{
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.modal-login input:focus,
+.modal-search input:focus,
+.modal-callback input:focus,
+.modal-callback textarea:focus{
+  border: 2px solid #c7c6c5;
+}
+
+a.login-form-forgot,
+a.login-form-sin-up{
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+a.login-form-forgot:focus,
+a.login-form-sin-up:focus{
+  outline: none;
+}
+
+a.login-form-forgot:hover,
+a.login-form-sin-up:hover,
+a.login-form-forgot:focus,
+a.login-form-sin-up:focus
+a.login-form-forgot:active,
+a.login-form-sin-up:active{
+  color: #ffbc9e;
+}
+
+.modal-callback h2{
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+
+
+/* стили для catalog.html */
+ul.breadcrumbs{
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs li{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filters fieldset{
+  border: none;
+}
+
+.filters legend{
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.filters input{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.filters select{
+  color: #ffffff;
+
+  background-color: transparent;
+  border: none;
+}
+
+.filters select:focus{
+  color: #323232;
+}
+
+.filters .filters-background{
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+
+.filters-submit{
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filters-submit:focus{
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.filters-submit:active{
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-list a{
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-list .active a{
+  color: #323232;
+  background-color: rgb(255, 255, 255);
+}
+.pagination-list a:focus{
+  outline: none;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus{
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.modal-cart{
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.modal-cart .item-price{
+  color: #999999;
+}
+
+.modal-cart .all-cost{
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
