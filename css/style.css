@@ -1989,6 +1989,10 @@ a.bold-href{
   display: block;
 }
 
+iframe {
+  border: 0;
+}
+
 @keyframes bounce{
   0%{
     transform: translateY(-2000px);
