@@ -70,7 +70,8 @@ a{
 
 .site-navigation,
 .subnavigation ,
-.user-navigation{
+.user-navigation,
+.catalog-user-navigation{
   list-style: none;
 }
 
@@ -197,7 +198,8 @@ a{
 
 /* стили пользовательского меню */
 
-.user-navigation{
+.user-navigation,
+.catalog-user-navigation{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -206,12 +208,17 @@ a{
   width: 310px;
 }
 
-.user-navigation li:not(:last-child){
+.user-navigation li:not(:last-child),
+.catalog-user-navigation li:not(:last-child){
   margin-right: 12px;
 }
 
 .user-navigation>li:first-child{
   margin-left: 22px;
+}
+
+.catalog-user-navigation>li:first-child{
+  margin-left: 40px;
 }
 
 .search-button,
