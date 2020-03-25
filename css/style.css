@@ -1829,7 +1829,7 @@ a.bold-href{
 
 .ice-cream-card::after{
   position: absolute;
-  content: '';
+  content: "";
   left: -13px;
   top: -8px;
   width: 293px;
